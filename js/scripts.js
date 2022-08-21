@@ -19,8 +19,6 @@ function getAndSetMadLibValues() {
   document.querySelector("span#exclamation").innerText = exclamationInput;
 }
 
-// this function creates the onsubmit event handler
-// it needs to be called in the window.onload event handler
 function setFormSubmissionEventHandler() {
   let form = document.querySelector("form");
   form.onsubmit = function(event) {
@@ -31,8 +29,5 @@ function setFormSubmissionEventHandler() {
 }
 
 window.onload = function() {
-  // inside of the window.onload handler function we only include
-  // the code that we want to run when
-  // the webpage has finished loading all resources
   setFormSubmissionEventHandler();
 };
